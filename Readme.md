@@ -18,7 +18,6 @@ The slides are available in the Slides folder
  set AWS_REGION=eu-west-1
   ```
 + Deploy to AWS `npm run cdk deploy`.
-+ Deployment takes some time. Some exercises can be completed by running `npm run cdk synth` or `npm run cdk diff`.
 + (After exercise 1A) The deployment command should print the URL of the deployed webpage as a Cloudformation output.
 
 ## Exercises
@@ -26,7 +25,7 @@ The slides are available in the Slides folder
 ### 0 Run the CDK app and deploy
 + Goals: First deployment (a DynamoDB table) and getting started with the CDK.
 + Go to `exercises/cdk` and make yourself familiar with the code.
-+ run `cdk synth`, contemplate the generated template in the cdk.out folder and `cdk deploy`. 
++ run `npm run cdk synth`, contemplate the generated template in the cdk.out folder and `npm run cdk deploy`. 
 
 ### 1 How to import resources from other stacks:
 
@@ -100,9 +99,9 @@ Inspect the resulting policy/role from 4A with cdk synth and restrict the permis
 
 ## For CDK
 After `cd cdk`:
- * `cdk deploy`      deploy this stack to your default AWS account/region (Dockerfile needs to be created before)
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+ * `npm run cdk deploy`      deploy this stack to your default AWS account/region (Dockerfile needs to be created before)
+ * `npm run cdk diff`        compare deployed stack with current state
+ * `npm run cdk synth`       emits the synthesized CloudFormation template
 
 ## For java
 * `./gradlew dockerCreateDockerfile` create Dockerfile to package application
