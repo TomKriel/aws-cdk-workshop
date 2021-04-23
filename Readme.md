@@ -11,6 +11,7 @@ The slides are available in the Slides folder
 
 ## How to deploy exercises and access the deployed webpage
 + Go to `exercises/cdk`.
++ Insert your AWS Account ID in `exercises/cdk/bin/app.ts`
 + Set your configuration (Linux/Mac: Use `export AUTHOR=...`)
  ```
  set AUTHOR=<Insert your user>
